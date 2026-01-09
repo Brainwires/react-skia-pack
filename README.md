@@ -314,6 +314,20 @@ Copy to `public/` folder and reference:
 4. **Canvas Recycling**: Reuse SkiaCanvas instances when possible
 5. **Limit Animations**: Reduce animation complexity on low-end devices
 
+## Bundle Sizes
+
+Optimized build outputs for tree-shaking:
+
+| Entry Point | CJS Size | ESM Size |
+|------------|----------|----------|
+| Main (`@brainwires/react-skia-pack`) | ~245 KB | ~239 KB |
+| Charts only (`/charts`) | ~102 KB | ~101 KB |
+| Widgets only (`/widgets`) | ~91 KB | ~90 KB |
+| Primitives only (`/primitives`) | ~41 KB | ~39 KB |
+| Utils only (`/utils`) | ~30 KB | ~28 KB |
+
+*Sizes include source maps. Gzipped sizes are approximately 25-30% smaller.*
+
 ## TypeScript
 
 Full TypeScript support with exported types:
