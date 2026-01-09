@@ -42,7 +42,6 @@ function detectExistingCanvasKit(): CanvasKit | null {
   // Check for global CanvasKit instance (react-native-skia pattern)
   const globalCanvasKit = (window as unknown as { CanvasKit?: CanvasKit }).CanvasKit
   if (globalCanvasKit && typeof globalCanvasKit.MakeSurface === "function") {
-    console.log("[Skia] Detected existing CanvasKit instance (possibly from react-native-skia)")
     return globalCanvasKit
   }
 
@@ -54,12 +53,10 @@ async function loadFont(ck: CanvasKit): Promise<Typeface | null> {
   if (typeof ck.Typeface?.GetDefault === "function") {
     const typeface = ck.Typeface.GetDefault()
     if (typeface) {
-      console.log("[Skia] Using GetDefault() typeface")
       return typeface
     }
   }
 
-  console.error("[Skia] GetDefault() typeface not available")
   return null
 }
 
@@ -172,7 +169,6 @@ export function SkiaProvider({
       })
       .catch((err) => {
         if (mounted) {
-          console.error("[Skia] Failed to load CanvasKit:", err)
           setError(err instanceof Error ? err : new Error(String(err)))
           setIsLoading(false)
         }
