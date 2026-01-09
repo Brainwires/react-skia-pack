@@ -1,0 +1,23 @@
+{
+  "name": "custom-charts-skia-example",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "postinstall": "cp -r node_modules/@brainwires/react-skia-pack/public/canvaskit public/ || true"
+  },
+  "dependencies": {
+    "@brainwires/react-skia-pack": "^1.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.0"
+  }
+}
