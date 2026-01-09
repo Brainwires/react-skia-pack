@@ -169,6 +169,7 @@ export function SkiaProvider({
       })
       .catch((err) => {
         if (mounted) {
+          console.error("[Skia] Failed to load CanvasKit:", err)
           setError(err instanceof Error ? err : new Error(String(err)))
           setIsLoading(false)
         }
