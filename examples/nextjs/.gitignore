@@ -23,4 +23,4 @@ out/
 .DS_Store
 
 # WASM files (copied during postinstall)
-public/canvaskit/
+public/wasm/
