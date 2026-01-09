@@ -5,7 +5,7 @@ Complete working examples demonstrating how to use `@brainwires/react-skia-pack`
 ## Available Examples
 
 ### 1. [Next.js Integration](./nextjs)
-Full Next.js 15 application with App Router showing:
+Full Next.js 16 application with App Router showing:
 - Multiple chart types (Bar, Line, Pie)
 - Interactive widgets (Slider, Knob)
 - Server Components + Client Components
@@ -74,7 +74,7 @@ WASM files are automatically copied during `postinstall`.
 
 | Example | Framework | Use Case | Complexity |
 |---------|-----------|----------|------------|
-| Next.js | Next.js 15 | Full-featured app | ⭐⭐⭐ |
+| Next.js | Next.js 16 | Full-featured app | ⭐⭐⭐ |
 | Vite | Vite 5 + React | Simple integration | ⭐ |
 | Dashboard | Vite + React | Real-world app | ⭐⭐⭐⭐ |
 | Custom Charts | Vite + React | Advanced usage | ⭐⭐⭐⭐⭐ |

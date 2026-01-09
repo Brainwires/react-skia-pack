@@ -4,7 +4,7 @@ This example demonstrates how to use `@brainwires/react-skia-pack` in a Next.js 
 
 ## Features
 
-- ✅ App Router (Next.js 15+)
+- ✅ App Router (Next.js 16+)
 - ✅ Server Components + Client Components
 - ✅ Multiple chart and widget demos
 - ✅ Interactive controls
