@@ -10,7 +10,7 @@
     "postinstall": "mkdir -p public/wasm/canvaskit && cp -r node_modules/@brainwires/react-skia-pack/public/wasm/canvaskit/* public/wasm/canvaskit/ || true"
   },
   "dependencies": {
-    "@brainwires/react-skia-pack": "^1.0.3",
+    "@brainwires/react-skia-pack": "^1.0.5",
     "next": "^16.1.1",
     "react": "^19.2.3",
     "react-dom": "^19.2.3"

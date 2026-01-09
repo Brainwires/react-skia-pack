@@ -9,7 +9,7 @@
     "postinstall": "cp -r node_modules/@brainwires/react-skia-pack/public/canvaskit public/ || true"
   },
   "dependencies": {
-    "@brainwires/react-skia-pack": "^1.0.3",
+    "@brainwires/react-skia-pack": "^1.0.5",
     "react": "^19.2.3",
     "react-dom": "^19.2.3"
   },
