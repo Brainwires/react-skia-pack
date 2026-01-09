@@ -1,5 +1,5 @@
 {
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React components for Skia-based charts, widgets, and visualizations using CanvasKit WASM",
   "keywords": [
     "react",
@@ -89,6 +89,5 @@
   "engines": {
     "node": ">=18.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
