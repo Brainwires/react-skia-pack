@@ -115,10 +115,16 @@ async function loadCanvasKit(wasmPath: string = DEFAULT_CANVASKIT_PATH): Promise
     }
 
     script.onerror = () => {
+      canvasKitPromise = null // Reset promise so it can retry
       reject(new Error(`Failed to load CanvasKit script from ${wasmPath}`))
     }
 
     document.head.appendChild(script)
+  })
+
+  // Reset promise on rejection so it can retry
+  canvasKitPromise.catch(() => {
+    canvasKitPromise = null
   })
 
   return canvasKitPromise
