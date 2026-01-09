@@ -1,6 +1,6 @@
 {
   "name": "@brainwires/react-skia-pack",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React components for Skia-based charts, widgets, and visualizations using CanvasKit WASM",
   "keywords": [
     "react",
