@@ -1,5 +1,4 @@
 {
-  "name": "@brainwires/react-skia-pack",
   "version": "1.0.1",
   "description": "React components for Skia-based charts, widgets, and visualizations using CanvasKit WASM",
   "keywords": [
@@ -67,9 +66,6 @@
     "prepublishOnly": "npm run build",
     "typecheck": "tsc --noEmit"
   },
-  "dependencies": {
-    "@brainwires/react-skia-pack": "^1.0.0"
-  },
   "peerDependencies": {
     "react": ">=18.0.0",
     "react-dom": ">=18.0.0"
@@ -92,5 +88,7 @@
   },
   "engines": {
     "node": ">=18.0.0"
+  },
+  "dependencies": {
   }
 }

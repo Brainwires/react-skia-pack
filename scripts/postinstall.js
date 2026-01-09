@@ -62,7 +62,7 @@ function copyWasmFiles() {
       "full"
     )
 
-    const targetDir = path.join(__dirname, "..", "public", "canvaskit")
+    const targetDir = path.join(__dirname, "..", "public", "wasm", "canvaskit")
 
     // Create target directory if it doesn't exist
     if (!fs.existsSync(targetDir)) {
